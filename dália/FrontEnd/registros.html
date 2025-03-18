@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="registros.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./img/navbar/Logo_dalia.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li class="Home"><a href="../home/index.html"><img src="./img/navbar/Home__nav.svg" alt=""></a></li>
+                <li class="Calendario"><a href="../calendario/calendario.html"><img src="./img/navbar/Calendar-full__nav.svg"></a></li>
+                <li class="forum"><a href="../forum/forum.html"><img src="./img/navbar/Fórum__nav.svg"></a></li>
+                <li class="principal"><a href="../principal/principal.html"><img src="./img/navbar/Flower__nav.svg" alt=""></a></li>
+                <li class="perfil"><a href="../perfil/perfil.html"><img src="./img/navbar/Perfil__nav.svg"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="registros">
+            <div class="registros-botoes" alt="registro-diario">
+                <h1>Registro Diário</h1>
+                <div class="registro">
+                    <h2>Como está seu humor hoje?</h1>
+                    <div class="mood-options">
+                        <label for="happy"><input type="radio" id="happy" name="mood" value="happy">🥰</label>
+                        <label for="happy"><input type="radio" id="happy" name="mood" value="happy">😊</label>
+                        <label for="neutro"><input type="radio" id="neutro" name="mood" value="neutro">😐</label>
+                        <label for="triste"><input type="radio" id="triste" name="mood" value="triste">😢</label>
+                        <label for="bravo"><input type="radio" id="bravo" name="mood" value="bravo">😠</label>
+                    </div>
+                </div>
+                <div class="registro">
+                    <h2>Quais sintomas você teve?</h1>
+                    <div alt="sintomas"></div>
+                    <div>
+                        <div id="lista-sintomas" class="sintomas__btn">
+                            <button class="sintoma" style="background-color: #fcd48b;" value="colicas">Cólicas</button>
+                            <button class="sintoma" style="background-color: #FFABAB;" value="dorCabeca">Dor de cabeça</button>
+                            <button class="sintoma" style="background-color: #FFC3A0;" value="cansaco">Cansaço</button>
+                            <button class="sintoma" style="background-color: #FFCCB6;" value="inchaço">Inchaço</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="registro">
+                    <h2>Registre sua alimentação:</h1>
+                    <div alt="alimentacao"></div>
+                    <input type="text" class="alimentacao" placeholder="Escreva o que comeu hoje">
+                </div>
+                <div class="registro">
+                    <h2>Registre sua alimentação:</h1>
+                    <div alt="hábitos"></div>
+                    <div id="lista-sintomas" class="sintomas__btn">
+                        <button class="sintoma" style="background-color: #fcd48b;" value="colicas">Leitura</button>
+                        <button class="sintoma" style="background-color: #FFABAB;" value="dorCabeca">Meditação</button>
+                        <button class="sintoma" style="background-color: #FFC3A0;" value="cansaco">Caminhadas</button>
+                        <button class="sintoma" style="background-color: #FFCCB6;" value="inchaço">Terapia</button>
+                    </div>
+                </div>
+            </div>
+            <div class="recebedor">
+                <div classe="recebe-registros" id="recebe-registros">
+                </div>
+                <button class="save">Salvar</button>
+            </div>
+        </div>
+    </main>
+    
+    
+
+</body>
+</html>
